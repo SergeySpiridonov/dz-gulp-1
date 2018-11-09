@@ -18,11 +18,4 @@ gulp.task('styles', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('sass', function() {
-    return gulp.src('./app/sass/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./app/css'))
-    .pipe(browserSync.stream());
-});
-
 gulp.task('default', ['server']);
